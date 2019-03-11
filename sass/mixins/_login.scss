@@ -1,3 +1,5 @@
+@import '_variables';
+
 @mixin login {
   .vertical-center {
     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -8,11 +10,11 @@
   }
 
   .atsign {
-    background-color: white;
+    background-color: $orange;
   }
 
   .jumbotron {
-    background-color: $background;
+    background-color: $orange;
   }
 
   a {
