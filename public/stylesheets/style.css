@@ -26,6 +26,9 @@ a {
 .card-text, .form-check-label, p {
   color: white; }
 
+p {
+  color: black; }
+
 h4 {
   color: #b30015; }
 
