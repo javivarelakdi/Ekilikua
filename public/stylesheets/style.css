@@ -1,52 +1,19 @@
-.miniclasscard-card {
-  margin: 2rem 1rem;
-  padding: 0 0.25rem; }
-
-.card-title-own {
-  color: #AA269F; }
-
-.button {
-  background-color: #AA269F;
-  color: #fff; }
-
-.classlist-class-list-title {
-  text-align: center;
-  margin-top: 4rem; }
-
-.navbar-background {
-  background-color: #AA269F; }
-
-.navbar.navbar-light .navbar-nav .nav-item .nav-link {
-  color: white; }
-
-.category {
-  padding: 0.5rem;
-  font-size: 0.85rem; }
-
-.icon-space {
-  margin-right: 1rem;
-  margin-bottom: 0; }
-
-.img-professor {
-  width: 100%;
-  padding: 0; }
-
-.img-little-avatar {
-  max-width: 20%; }
-
-.list-group-item {
-  border: none !important; }
-
-.avatar-list {
-  display: flex; }
-
 .vertical-center {
   min-height: 100%;
   /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh;
-  /* These two lines are counted as one :-)       */
-  display: flex;
-  align-items: center; }
+  /* These two lines are counted as one :-)       */ }
+
+.avatar {
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.5em; }
+
+.avatar > img {
+  width: 25vh;
+  height: 25vh;
+  margin: 0 auto;
+  border-radius: 50%; }
 
 .atsign {
   background-color: white; }
@@ -100,6 +67,48 @@ a {
 
 .signup-card-text {
   color: white; }
+
+.miniclasscard-card {
+  margin: 2rem 1rem;
+  padding: 0 0.25rem; }
+
+.card-title-own {
+  color: #AA269F; }
+
+.button {
+  background-color: #AA269F;
+  color: #fff; }
+
+.classlist-class-list-title {
+  text-align: center;
+  margin-top: 4rem; }
+
+.navbar-background {
+  background-color: #AA269F; }
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  color: white; }
+
+.category {
+  padding: 0.5rem;
+  font-size: 0.85rem; }
+
+.icon-space {
+  margin-right: 1rem;
+  margin-bottom: 0; }
+
+.img-professor {
+  width: 100%;
+  padding: 0; }
+
+.img-little-avatar {
+  max-width: 20%; }
+
+.list-group-item {
+  border: none !important; }
+
+.avatar-list {
+  display: flex; }
 
 .vertical-center {
   min-height: 100%;
@@ -158,7 +167,18 @@ a {
   background-color: #FD6E42; }
 
 .container {
-  padding: 0px; }
+  padding: 0px;
+  margin: 0px; }
+
+.fullwith {
+  width: 100vw;
+  margin: 0;
+  padding: 0; }
+
+.fullheight {
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
 
 .background-violet {
   background-color: #AA269F; }

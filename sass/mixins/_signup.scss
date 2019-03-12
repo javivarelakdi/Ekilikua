@@ -1,31 +1,28 @@
-@mixin signup {
-  .vertical-center {
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
-  
-    display: flex;
-    align-items: center;
-  }
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
 
-  .jumbotron {
-    background-color: #AC51E1;
-  }
+  display: flex;
+  align-items: center;
+}
 
-  a {
-    color: rgb(248, 170, 0);
-  }
+.jumbotron {
+  background-color: #AC51E1;
+}
 
-  .signup-card {
-    background-color: #AC51E1;
-    border: none;
-  }
-  .signup-card-title {
-    color: white;
-    font-size: 3rem;
-  }
+a {
+  color: rgb(248, 170, 0);
+}
 
-  .signup-card-text {
-    color: white;
-  }
- 
+.signup-card {
+  background-color: #AC51E1;
+  border: none;
+}
+.signup-card-title {
+  color: white;
+  font-size: 3rem;
+}
+
+.signup-card-text {
+  color: white;
 }
