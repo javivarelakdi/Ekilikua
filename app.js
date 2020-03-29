@@ -23,14 +23,24 @@ const authRouter = require('./routes/auth');
 const classesRouter = require('./routes/classes');
 
 // mongodb connect
-(async () => {
-  try {
-    const conection = await mongoose.connect(`${process.env.MONGODB_URI}`, { useNewUrlParser: true });
-    console.log(`Connected to Mongo! Database name: "${conection.connections[0].db.s.databaseName}"`);
-  } catch (err) {
-    console.error('Error conecting to Mongo database.', err);
-  }
-})();
+// (async () => {
+//   try {
+//     const conection = await mongoose.connect(`${process.env.MONGODB_URI}`, { useNewUrlParser: true });
+//     console.log(`Connected to Mongo! Database name: "${conection.connections[0].db.s.databaseName}"`);
+//   } catch (err) {
+//     console.error('Error conecting to Mongo database.', err);
+//   }
+// })();
+
+mongoose
+  .connect('mongodb://localhost/ekilikua', {useNewUrlParser: true})
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
+
 
 const app = express();
 
